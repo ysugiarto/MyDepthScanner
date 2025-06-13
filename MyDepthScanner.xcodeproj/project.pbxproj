@@ -8,19 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		CC082CF82C07102C00FD945D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC082CF72C07102C00FD945D /* AppDelegate.swift */; };
-		CC082CFA2C07102C00FD945D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CC082CF92C07102C00FD945D /* art.scnassets */; };
 		CC082CFC2C07102C00FD945D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC082CFB2C07102C00FD945D /* ViewController.swift */; };
 		CC082CFF2C07102C00FD945D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC082CFE2C07102C00FD945D /* Base */; };
 		CC082D012C07102E00FD945D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC082D002C07102E00FD945D /* Assets.xcassets */; };
+		CC7DB20C2C68600C00E74498 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB20B2C68600C00E74498 /* Logger.swift */; };
+		CC7DB20E2C686B9B00E74498 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB20D2C686B9B00E74498 /* FileHandler.swift */; };
+		CC7DB2112C687BDF00E74498 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CC7DB2102C687BDF00E74498 /* JGProgressHUD */; };
+		CC7DB2242C6A5B1D00E74498 /* PointCloud.metal in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB21F2C6A5B1D00E74498 /* PointCloud.metal */; };
+		CC7DB22B2C6A5C0000E74498 /* AAPLTransforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB2272C6A5C0000E74498 /* AAPLTransforms.mm */; };
+		CC7DB22C2C6A5C0000E74498 /* PointCloudMetalView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC7DB2292C6A5C0000E74498 /* PointCloudMetalView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC082CF42C07102C00FD945D /* MyDepthScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDepthScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC082CF72C07102C00FD945D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC082CF92C07102C00FD945D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		CC082CFB2C07102C00FD945D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC082CFE2C07102C00FD945D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC082D002C07102E00FD945D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC082D072C07104100FD945D /* MyDepthScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDepthScanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		CC082D122C07219A00FD945D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		CC7DB20B2C68600C00E74498 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CC7DB20D2C686B9B00E74498 /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		CC7DB21F2C6A5B1D00E74498 /* PointCloud.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PointCloud.metal; sourceTree = "<group>"; };
+		CC7DB2252C6A5B9700E74498 /* ShadersType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadersType.h; sourceTree = "<group>"; };
+		CC7DB2262C6A5C0000E74498 /* AAPLTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLTransforms.h; sourceTree = "<group>"; };
+		CC7DB2272C6A5C0000E74498 /* AAPLTransforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLTransforms.mm; sourceTree = "<group>"; };
+		CC7DB2282C6A5C0000E74498 /* PointCloudMetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCloudMetalView.h; sourceTree = "<group>"; };
+		CC7DB2292C6A5C0000E74498 /* PointCloudMetalView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PointCloudMetalView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7DB2112C687BDF00E74498 /* JGProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +54,7 @@
 			children = (
 				CC082CF62C07102C00FD945D /* MyDepthScanner */,
 				CC082CF52C07102C00FD945D /* Products */,
+				CC082D112C07219A00FD945D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,13 +69,45 @@
 		CC082CF62C07102C00FD945D /* MyDepthScanner */ = {
 			isa = PBXGroup;
 			children = (
+				CC7DB2202C6A5B1D00E74498 /* Shaders */,
 				CC082CF72C07102C00FD945D /* AppDelegate.swift */,
-				CC082CF92C07102C00FD945D /* art.scnassets */,
 				CC082CFB2C07102C00FD945D /* ViewController.swift */,
+				CC7DB22A2C6A5C0000E74498 /* PointCloud */,
+				CC7DB20D2C686B9B00E74498 /* FileHandler.swift */,
+				CC7DB20B2C68600C00E74498 /* Logger.swift */,
 				CC082CFD2C07102C00FD945D /* Main.storyboard */,
 				CC082D002C07102E00FD945D /* Assets.xcassets */,
+				CC082D072C07104100FD945D /* MyDepthScanner-Bridging-Header.h */,
 			);
 			path = MyDepthScanner;
+			sourceTree = "<group>";
+		};
+		CC082D112C07219A00FD945D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC082D122C07219A00FD945D /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC7DB2202C6A5B1D00E74498 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				CC7DB2252C6A5B9700E74498 /* ShadersType.h */,
+				CC7DB21F2C6A5B1D00E74498 /* PointCloud.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		CC7DB22A2C6A5C0000E74498 /* PointCloud */ = {
+			isa = PBXGroup;
+			children = (
+				CC7DB2262C6A5C0000E74498 /* AAPLTransforms.h */,
+				CC7DB2272C6A5C0000E74498 /* AAPLTransforms.mm */,
+				CC7DB2282C6A5C0000E74498 /* PointCloudMetalView.h */,
+				CC7DB2292C6A5C0000E74498 /* PointCloudMetalView.mm */,
+			);
+			path = PointCloud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +126,9 @@
 			dependencies = (
 			);
 			name = MyDepthScanner;
+			packageProductDependencies = (
+				CC7DB2102C687BDF00E74498 /* JGProgressHUD */,
+			);
 			productName = MyDepthScanner;
 			productReference = CC082CF42C07102C00FD945D /* MyDepthScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +145,7 @@
 				TargetAttributes = {
 					CC082CF32C07102C00FD945D = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -106,6 +158,9 @@
 				Base,
 			);
 			mainGroup = CC082CEB2C07102C00FD945D;
+			packageReferences = (
+				CC7DB20F2C687BDF00E74498 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
 			productRefGroup = CC082CF52C07102C00FD945D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC082CFA2C07102C00FD945D /* art.scnassets in Resources */,
 				CC082D012C07102E00FD945D /* Assets.xcassets in Resources */,
 				CC082CFF2C07102C00FD945D /* Base in Resources */,
 			);
@@ -133,6 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7DB22B2C6A5C0000E74498 /* AAPLTransforms.mm in Sources */,
+				CC7DB20E2C686B9B00E74498 /* FileHandler.swift in Sources */,
+				CC7DB2242C6A5B1D00E74498 /* PointCloud.metal in Sources */,
+				CC7DB22C2C6A5C0000E74498 /* PointCloudMetalView.mm in Sources */,
+				CC7DB20C2C68600C00E74498 /* Logger.swift in Sources */,
 				CC082CFC2C07102C00FD945D /* ViewController.swift in Sources */,
 				CC082CF82C07102C00FD945D /* AppDelegate.swift in Sources */,
 			);
@@ -276,25 +335,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S2LDEVQKWT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = MyDepthScanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Depth Scanner";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required for scanning.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = name.sugie.MyDepthScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = id.ysugiarto.MyDepthScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyDepthScanner/MyDepthScanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,25 +371,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S2LDEVQKWT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = MyDepthScanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Depth Scanner";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required for scanning.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = name.sugie.MyDepthScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = id.ysugiarto.MyDepthScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyDepthScanner/MyDepthScanner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC7DB20F2C687BDF00E74498 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC7DB2102C687BDF00E74498 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7DB20F2C687BDF00E74498 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC082CEC2C07102C00FD945D /* Project object */;
 }
