@@ -51,14 +51,14 @@ fragment float4 fragmentShaderPoints(RasterizerDataColor in [[stage_in]],
 //        return colorSample;
 //    }
     if (in.depth <= 400.0) {
-        constexpr sampler textureSampler (mag_filter::linear, min_filter::linear);
+        constexpr sampler textureSampler (mag_filter::linear, min_filter::linear); //coded giex
         const float4 colorSample = colorTexture.sample (textureSampler, in.coor);
         return colorSample;
 //        return {22.f/255, 148.f/255, 142.f/255, 1.f};
     }
     else if (in.depth > 400.0){
         //return {22.f/255, 148.f/255, 142.f/255, 1.f};
-        discard_fragment();
+        discard_fragment(); //coded giex
         return 0;
     }
     discard_fragment();

@@ -37,7 +37,8 @@ typedef struct {
 //    matrix_float4x4 localToWorld;
 //    matrix_float3x3 cameraIntrinsicsInversed;
 //    simd_float2 cameraResolution;
-//    
+//    //coded giex
+//
 //    float particleSize;
 //    int maxPoints;
 //    int pointCloudCurrentIndex;

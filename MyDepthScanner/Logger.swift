@@ -52,7 +52,7 @@ enum Log {
     fileprivate static func handleLog(level: LogLevel, str: String, shouldLogContext: Bool, context: Context) {
         let logComponents = ["[\(level.prefix)]", str]
         
-        var fullStr = logComponents.joined(separator: " ")
+        var fullStr = logComponents.joined(separator: " ") //coded giex
         if shouldLogContext {
             fullStr += " - \(context.description)"
         }

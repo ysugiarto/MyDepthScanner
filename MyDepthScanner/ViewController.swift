@@ -209,7 +209,7 @@ class ViewController: UIViewController, AVCaptureDataOutputSynchronizerDelegate 
         guard session.canAddInput(videoDeviceInput) else {
             print("Could not add video device input to the session")
             setupResult = .configurationFailed
-            session.commitConfiguration()
+            session.commitConfiguration() //coded giex
             return
         }
         session.addInput(videoDeviceInput)
@@ -253,7 +253,7 @@ class ViewController: UIViewController, AVCaptureDataOutputSynchronizerDelegate 
         do {
             try videoDevice.lockForConfiguration()
             videoDevice.activeDepthDataFormat = selectedFormat
-            videoDevice.unlockForConfiguration()
+            videoDevice.unlockForConfiguration() //coded giex
         } catch {
             print("Could not lock device for configuration: \(error)")
             setupResult = .configurationFailed
